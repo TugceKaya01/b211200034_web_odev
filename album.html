@@ -17,7 +17,29 @@
   });
   </script>
 <style>@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #0275d8;
+  content: "/\00a0";
 
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+
+}
 :root {
   --color-primary: #de6262;
   --color-secondary: #ffb88c;
@@ -229,6 +251,13 @@ body {
           </ul>
     </div>
 </nav>
+<div style="float: right;">
+  <ul class="breadcrumb">
+    <li><a href="web_odevi.html" style="text-align: right;">Tanıtım</a></li>
+    <li><a href="album.html" style="text-align: right">Albüm</a></li>
+    <li><a href="konum.html" style="text-align: right;">Konum</a></li>
+    <li><a href="komplo.html" style="text-align: right;">Komplo Teorileri</a></li>
+  </ul></div>
 
     
     <div class="image-modal">
