@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title> Tuğçe Kaya B211200034 </title>
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/jquery-2.0.3.js"></script>
+<script src="source/jquery.swipebox.js"></script>
+<link rel="stylesheet" href="source/swipebox.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $(".swipebox").swipebox();
+  });
+  </script>
+<style>@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+ * {box-sizing:border-box;}
+
+ input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #470fa2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #345097;
+  color: rgb(46, 14, 61);
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px 20px 20px 20x;
+  display: inline-block;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #0275d8;
+  content: "/\00a0";
+
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+
+}
+
+
+
+
+body {
+  height: 100vh;
+  background-color:rgba(130, 166, 233, 0.808);
+
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 20px; 
+  position: relative;
+}
+
+
+
+.col-images .image-container {
+  height: 0;
+  min-height: 100%;
+  border-radius: 18px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.col-images .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transition: transform 0.4s;
+}
+
+
+
+.image-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.image-modal.toggled {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-modal.toggled img {
+  transform: scale(1);
+}
+
+.image-modal .fullscreen-image-container {
+  height: 90%;
+  border-radius: 20px;
+}
+
+.image-modal img {
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  transform: scale(0.9);
+  transition: transform 0.3s 0.1s;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    grid-template-columns: 2fr 3fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    gap: 10px;
+  }
+
+  .container::before,
+  .container::after {
+    top: -20px;
+    width: 60px;
+  }
+
+  .container::after {
+    right: -20px;
+    left: unset;
+    border: 3px solid var(--color-secondary);
+    border-left: none;
+    border-bottom: none;
+  }
+
+
+  .image-modal .fullscreen-image-container {
+    width: 50%;
+    height: auto;
+  }
+
+  .image-modal img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
+
+  .container::before {
+    left: 6px;
+  }
+
+  .container::after {
+    right: 6px;
+  }
+
+  .col-images {
+    border-radius: 0;
+  }
+
+  .image-modal .fullscreen-image-container {
+    width: 96%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark"style="background-color: #4b0082; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div class="container-fluid">
+        <a class="navbar-brand" >Mariana Çukuru</a> 
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="web_odevi.html">Tanıtım</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="album.html">Albüm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="konum.html">Konum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="komplo.html">Komplo Teorileri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="iletisim.html">Katılım İçin</a>
+              </li>
+          </ul>
+    </div>
+</nav>
+<div  style="float: right;">
+  <ul class="breadcrumb">
+    <li><a href="#" style="text-align: right;">Tanıtım</a></li>
+    <li><a href="#" style="text-align: right">Albüm</a></li>
+    <li><a href="#" style="text-align: right;">Konum</a></li>
+    <li><a href="#" style="text-align: right;">Komplo Teorileri</a></li>
+    <li><a href="#" style="text-align: right;"></a>Katılım İçin</li>
+  </ul></div>
+  <br>
+
+  <div class="container-fluid" style="padding: 90px 300px 20px 300px">
+    <form action="/action_page.php">
+      <label for="ad">Ad</label>
+      <input type="text" id="ad" name="Ad" placeholder="adı...">
+  
+      <label for="soyad">Soyad</label>
+      <input type="text" id="soyad" name="Soyad" placeholder="soyadı...">
+  
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width:100%;border:1px solid #ccc;border-radius: 4px;padding: 12px;">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+  </div>
+
+</body>
+</html>
